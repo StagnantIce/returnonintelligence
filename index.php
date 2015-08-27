@@ -1,9 +1,9 @@
-<html>
-<body>
 <? //generate token
 	session_start();
 	$_SESSION['token'] = md5(uniqid(rand(), true));
 ?>
+<html>
+<body>
 <b>Example:</b>
 <div>
 5 5<br/>
