@@ -19,7 +19,7 @@ if (isset($_POST['input']) && isset($_POST['token'])) {
 				$position = explode(COL_DELIMITER, $position);
 				$position = Position::fromArray($position);
 				$route = new Route(trim($route));
-				$map->buildRoute(&$position, $route);
+				$map->buildRoute($position, $route);
 				echo $position;
 			}
 		} catch (Exception $e) {

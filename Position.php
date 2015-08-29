@@ -17,6 +17,10 @@ class Position {
 		}
 	}
 
+	/**
+	  * @param Array $position [x,y]
+	  * @return Position
+	  */
 	public static function fromArray(Array $position) {
 		if (count($position) !== 3) {
 			throw new Exception("Expect 3 coordinates");
